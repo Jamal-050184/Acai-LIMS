@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="{% static 'acailims.css' %}">
+    <link rel="stylesheet" href="{% static 'global.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acai_LIMS</title>
+
+</head>
+<body>
+    <div>
+        <h1>Acai LIMS </h1>
+  
+        <ul>
+          {% for x in mylims %}
+            <li>{{ x.Publisher }} || {{ x.Author }} || {{ x.Title }}</li>
+          {% endfor %}
+        </ul>
+
+    </div>
+
+
+</body>
+</html>
